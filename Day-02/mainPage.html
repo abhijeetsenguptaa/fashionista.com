@@ -258,7 +258,7 @@
             cursor: pointer;
         }
         #signIn{
-            display: non;
+            display: none;
             position: fixed;
             z-index: 1;
             left: 0;
@@ -272,7 +272,7 @@
         }
         .formData{
             background-color: #fefefe;
-            margin: 120px 200px;
+            margin: auto;
             border: 2px solid pink ;
             width: 700px;
         }
@@ -339,7 +339,7 @@
         <h2><a href="../Day-03/clothingPage.html">shop the new new collection</a></h2>
     </div>
     <div id="sign">
-        <button onclick="document.getElementById('signIn').style.display='block'">SignIn/SignUp</button>
+        <button onclick="document.getElementById('signIn').style.display='block'" style="border: none;padding:20px;letter-spacing:1px;font-weight:bolder" id="welcome">SignIn/SignUp</button>
         <div id="signIn" class="signIn">
             <form class="formData animate">
                 <div id="imgContainer">
@@ -350,12 +350,12 @@
                     <label for="username" class="head0">
                         <b>Username</b>
                     </label>
-                    <input type="text" name="username" placeholder="Enter Username"  required>
+                    <input type="text" name="username" placeholder="Enter Username" id="username" required>
                     <label for="password" class="head0">
                         <b>Password</b>
                     </label>
-                    <input type="password" name="password" placeholder="Enter Password" required>
-                    <button type="submit" class="pink">Login</button>
+                    <input type="password" name="password" placeholder="Enter Password" id="password" required>
+                    <button type="submit" class="pink" id="loginIn">Login</button>
                     <label>
                         <input type="checkbox" checked="checked" name="remember">Remember Me
                     </label>
@@ -642,6 +642,24 @@
             signIn.style.display = "none";
         }
     }
+
+    let loginIn = document.getElementById("loginIn");
+    let myForm = document.querySelector("form");
+    let welcome = document.getElementById("welcome")
+    let userData = JSON.parse(localStorage.getItem("user-data"))||[];
+
+    loginIn.addEventListener("click",(e)=>{
+        e.preventDefault();
+        
+        let formData = {
+            userData : myForm.username.value,
+            password: myForm.password.value
+        }
+    
+        userData.push(formData);
+        localStorage.setItem("user-data",JSON.stringify(userData));
+        welcome.innerText = "Welcome!" 
+    })
 </script>
 
 </html>
