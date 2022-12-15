@@ -214,13 +214,6 @@
 </head>
 
 <body>
-    <div id="sign">
-        <h2><a href="../Day-04/signIn.html">Sign In/Sign Up</a></h2>
-        <select id="lang">
-            <option value="English">English</option>
-            <option value="French">French</option>
-        </select>
-    </div>
     <div id="sticky">
         <div id="header">
             <div id="brand">
@@ -386,6 +379,7 @@
     let totalAmount = document.getElementById("totalAmount")
     let total = document.getElementById("total")
     let tbody = document.getElementById("items");
+    let installment = document.getElementById("installment");
     let sum = 0;
     let sum1 = 0;
 
@@ -406,6 +400,7 @@
             price.style.textAlign = "center"
             totalAmount.innerText = sum += element.price
             total.innerText = sum1 += element.price
+            installment.innerText = sum/4;
             price.setAttribute("class", "tData");
             let deleteBtn = document.createElement("button");
             deleteBtn.innerText = "REMOVE"
