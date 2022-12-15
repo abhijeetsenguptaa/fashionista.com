@@ -16,19 +16,12 @@
         body {
             width: 1200px;
             margin: auto;
+            font-family: poppins;
         }
 
-        a {
-            text-decoration: none;
-        }
-
-        #newCollection {
-            display: flex;
-            gap: 20px;
-            font-size: 10px;
-            justify-content: center;
-            background-color: rgba(205, 84, 104, 0.694);
-            color: white;
+        #sign>h2 {
+            margin-left: 20px;
+            margin-right: 20px;
         }
 
         #sign {
@@ -37,12 +30,10 @@
             color: blue;
             font-size: 10px;
             background-color: rgb(245, 242, 242);
-            position: relative;
         }
 
-        #sign>h2 {
-            margin-left: 20px;
-            margin-right: 20px;
+        #sign>h2>select>option {
+            color: blue;
         }
 
         #header {
@@ -85,40 +76,6 @@
             border-radius: 10px;
         }
 
-        #container {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 20px;
-        }
-
-        #container>div:hover,
-        #nav>ul>li:hover {
-            cursor: pointer;
-            color: rgb(1, 81, 1);
-            border-bottom: 1px solid rgb(1, 81, 1);
-            image-resolution: 120%;
-        }
-
-        #container>div>a>img {
-            width: 380px;
-        }
-
-        #container>div:nth-child(1) {
-            grid-area: 1/1/2/4;
-        }
-
-        #container>div:nth-child(8) {
-            grid-area: 4/1/5/4;
-        }
-
-        #container>div:nth-child(9) {
-            grid-area: 5/1/6/4;
-        }
-
-        #container>div:nth-child(10) {
-            grid-area: 6/1/7/4;
-        }
-
         #navBar {
             display: flex;
             border-top: 1px solid rgb(204, 203, 203);
@@ -131,45 +88,17 @@
             font-family: Poppins;
         }
 
-        #youLike,
-        #trending {
-            display: grid;
-            grid-template-columns: repeat(5, 1fr);
-            gap: 15px;
-            border-top: 1px solid rgb(204, 203, 203);
-            padding-top: 20px;
-        }
-
-        #youLike>div>h2,
-        #trending>div>h2 {
-            font-size: 14px;
-            color: rgb(155, 154, 154);
-        }
-
-        #explore {
-            border-top: 1px solid rgb(204, 203, 203);
-            border-bottom: 1px solid rgb(204, 203, 203);
-            display: grid;
-            grid-template-columns: repeat(3, 400px);
-            gap: 10px;
-            padding-top: 20px;
-            padding-bottom: 20px;
-        }
-
-        #explore>div>h2 {
-            font-size: 25px;
-            color: rgb(137, 137, 137);
-            font-weight: lighter;
-        }
-
-        #explore>div>p {
-            font-size: 12px;
-            font-weight: lighter;
-            line-height: 20px;
-        }
-
-        #explore>div>p>a {
+        #nav>ul>li:hover {
+            cursor: pointer;
             color: rgb(1, 81, 1);
+            border-bottom: 1px solid rgb(1, 81, 1);
+        }
+
+        #sticky {
+            position: -webkit-sticky;
+            position: sticky;
+            top: -10px;
+            background-color: white;
         }
 
         #signup {
@@ -209,164 +138,84 @@
             margin-left: 20px;
         }
 
-        #abtUs {
-            font-family: "Poppins";
-            font-size: 11.2px;
-            line-height: 20px;
-        }
-
-        #abtUs>p>a {
-            color: rgb(1, 81, 1);
-            font-weight: bolder;
-        }
-
-        #abtUs>p {
-            font-weight: bold;
-        }
-
-        #trending>div>h2 {
-            font-family: "Poppins";
-            font-weight: lighter;
-        }
-
-        #trending>div>h2:hover {
-            color: rgb(1, 81, 1);
-            cursor: pointer;
-        }
-
-        #trending:hover {
-            cursor: pointer;
-        }
-
-        #youLike>div>h2:hover {
-            color: rgb(1, 81, 1);
-            cursor: pointer;
-        }
-
-        #youLike:hover {
-            cursor: pointer;
-        }
-
-        #sticky {
-            position: -webkit-sticky;
-            position: sticky;
-            top: -10px;
-            background-color: white;
-        }
-
-        #footer>ul>li {
-            cursor: pointer;
-        }
-        #signIn{
-            display: non;
-            position: fixed;
-            z-index: 1;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            overflow: auto;
-            background-color: rgb(0,0,0);
-            background-color: rgb(0,0,0,0.4);
-            padding: 60px;
-        }
-        .formData{
-            background-color: #fefefe;
-            margin: 120px 200px;
-            border: 2px solid pink ;
+        #basket {
             width: 700px;
+            padding: 0px 40px 40px 40px;
+            margin-top: -14px;
         }
-        .close{
-            position: absolute;
-            font-size: 30px;
-            color: black;
-            right: 410px;
-            font-weight: bold;
+
+        #headBasket {
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 2px solid rgb(204, 203, 203);
         }
-        .close:hover{
-            cursor: pointer;
-            color: red;
-        }
-        .animate{
-            animation: animatezoom 0.6s;
-        }
-        @keyframes animatezoom{
-            from{transform: scale(0)}
-            to{transform:scale(1)}
-        }
-        #imgContainer{
-            text-align: center;
-            margin: 24px 0px 12px 0px;
-        }
-        #avatar{
-            border-radius: 50px;
-        }
-        .container{
+
+        th {
+            border-bottom: 1px solid rgb(204, 203, 203);
             padding: 20px;
         }
-        input[type=text], input[type=password] {
-            width: 100%;
-            padding: 12px 20px;
-            margin: 8px 0;
-            display: inline-block;
-            border: 1px solid #ccc;
-            box-sizing: border-box;
-          }
 
-          .pink{
-            background-color: pink;
-            color: black;
-            padding: 14px 20px;
-            margin: 8px 0;
+        .tData {
+            border-bottom: 1px solid rgb(204, 203, 203);
+            padding: 20px;
+        }
+
+        #tDelete {
+            padding: 10px;
+            width: 120px;
+            letter-spacing: 1px;
             border: none;
+            margin-left: 30px;
+            color: white;
+            background-color: rgb(240, 89, 89);
+        }
+        #tDelete:hover{
             cursor: pointer;
-            width: 100%;
-          }
-          
-          button:hover {
-            opacity: 0.9;
-          }
-          .head0{
-            font-size: 20px;
-          }
+            border:1px solid black;
+            background-color: white;
+            color: black;
+        }
+        #data {
+            display: flex;
+        }
+
+        #orderSummary {
+            margin-top: -10px;
+            margin-left: 20px;
+        }
+
+        #box {
+            border: 1px solid rgb(204, 203, 203);
+            width: 300px;
+            padding: 40px;
+        }
+
+        #checkOut {
+            width: 300px;
+            padding: 15px;
+            font-size: 15px;
+            color: white;
+            background-color: rgb(64, 79, 97);
+            border: none;
+            letter-spacing: 2px;
+        }
+        .bill{
+            display: flex;
+            justify-content: space-between;
+            width: 290px;
+        }
+        #checkOut:hover {
+            color: black;
+            background-color: white;
+            border: 1px solid black;
+            cursor: pointer;
+        }
     </style>
 </head>
 
 <body>
-    <div id="newCollection">
-        <h2>celebrate more. sparkle with joy. reflect often.</h2>
-        <h2>NEW YEAR'S RESOLUTION</h2>
-        <h2><a href="../Day-03/clothingPage.html">shop the new new collection</a></h2>
-    </div>
     <div id="sign">
-        <button onclick="document.getElementById('signIn').style.display='block'">SignIn/SignUp</button>
-        <div id="signIn" class="signIn">
-            <form class="formData animate">
-                <div id="imgContainer">
-                    <span onclick="document.getElementById('signIn').style.display='none'" class="close" title='Close Model'>&times;</span>
-                    <img src="./fASHIONISTA.png" width="100px" id="avatar">
-                </div>
-                <div class="container">
-                    <label for="username" class="head0">
-                        <b>Username</b>
-                    </label>
-                    <input type="text" name="username" placeholder="Enter Username"  required>
-                    <label for="password" class="head0">
-                        <b>Password</b>
-                    </label>
-                    <input type="password" name="password" placeholder="Enter Password" required>
-                    <button type="submit" class="pink">Login</button>
-                    <label>
-                        <input type="checkbox" checked="checked" name="remember">Remember Me
-                    </label>
-                </div>
-                <div class="container" style="background-color:#f1f1f1">
-                    <button type="button" onclick="document.getElementById('id01').style.display='none'"
-                        class="pink">Cancel</button>
-                    <span class="psw">Forgot <a href="#">password?</a></span>
-                </div>
-            </form>
-        </div>
+        <h2><a href="../Day-04/signIn.html">Sign In/Sign Up</a></h2>
         <select id="lang">
             <option value="English">English</option>
             <option value="French">French</option>
@@ -378,7 +227,7 @@
                 <h2>.FASHIONISTA.</h2>
             </div>
             <div id="search">
-                <input type="text" id="searchBar" placeholder="Search Fashionista">
+                <input type="text" id="searchBar" placeholder="Search Anthroplogie">
                 <i class="material-icons"><a href="../Day-03/cart.html">shopping_bag</a></i>
             </div>
         </div>
@@ -399,158 +248,56 @@
         </div>
     </div>
     <div id="container">
-        <div>
-            <img src="https://images.ctfassets.net/5de70he6op10/2HFTMrdLL0loq06gMx0wU5/da030821c4d930bb87dd08237fd0b533/121122_30OffPrimrose_HPGSecondaryBanner_LS_01.jpg?w=2882&q=80&fm=webp"
-                width="1200px">
-        </div>
-        <div>
-            <a href="../Day-03/clothingPage.html"><img
-                    src="https://images.ctfassets.net/5de70he6op10/1UtgIRn3AHo7yfB3CsbYdw/ced16c178459bc64efcf64a82422808b/LL_M1a.jpg?w=856&q=80&fm=webp"></a>
-        </div>
-        <div>
-            <a href="../Day-03/clothingPage.html"><img
-                    src="https://images.ctfassets.net/5de70he6op10/3RVZ7uybOuPPShdGFMqT8v/b5959346a8523c91664dd622f29f0b42/LL_M1b.jpg?w=856&q=80&fm=webp"
-                    alt=""></a>
-        </div>
-        <div>
-            <a href="../Day-03/clothingPage.html"><img
-                    src="https://images.ctfassets.net/5de70he6op10/29ixjcb2lf5i9QNbF0PWJq/6548be3127a3a13e7b4f13e6f029d059/LL_M1c.jpg?w=856&q=80&fm=webp"></a>
-        </div>
-        <div>
-            <a href="../Day-03/clothingPage.html"><img
-                    src="https://images.ctfassets.net/5de70he6op10/575n66TNKySGUMZHoEPyk1/a8c0be74eb5f6fb558385a19b5cfc120/LL_M1d.jpg?w=856&q=80&fm=webp"
-                    alt=""></a>
-        </div>
-        <div>
-            <a href="../Day-03/clothingPage.html"><img
-                    src="https://images.ctfassets.net/5de70he6op10/2FN1eYunGjb7iEefWXUqzL/9ebe26aa22ab3e675b1f27195af512f6/LL_M1e.jpg?w=856&q=80&fm=webp"
-                    alt=""></a>
-        </div>
-        <div>
-            <a href="../Day-03/clothingPage.html"><img
-                    src="https://images.ctfassets.net/5de70he6op10/4zCA1PXpVLBKmHSl7Od02R/1b5efdb8c8bb14c2edfa17d49818a4b5/LL_M1f.jpg?w=856&q=80&fm=webp"
-                    alt=""></a>
-        </div>
-        <div>
-            <img src="https://images.ctfassets.net/5de70he6op10/4HydoM22nviTQ7ogIXrduJ/a7e098f7d22cf03de5087f1bfcbabdbd/HPGModule_LS.jpg?w=2640&q=80&fm=webp"
-                width="1200px">
-        </div>
-        <div>
-            <img src="https://images.ctfassets.net/5de70he6op10/4Coxu47V0tyfirEz2UcoJM/176476dd10f81019582c3e3de68eaefa/LS_M4_Winterwhites.jpg?w=2641&q=80&fm=webp"
-                width="1200px">
-        </div>
-        <div>
-            <img src="https://images.ctfassets.net/5de70he6op10/6smg43UznC0EXEEvtUZOeK/2d857986576d95ecf780716a37fc0b77/LS_M5_BHLDN.jpg?w=2641&q=80&fm=webp"
-                width="1200px">
-        </div>
-        <div>
-            <a href=""><img
-                    src="https://images.ctfassets.net/5de70he6op10/3Xig86508Zv9Oo5d3UtJmM/96ff4f8186b3843b57ab0d72773b2ef3/RR_Beauty.jpg?w=856&q=80&fm=webp"></a>
-        </div>
-        <div>
-            <a href=""><img
-                    src="https://images.ctfassets.net/5de70he6op10/5wTKXC5wjHWgVTJDtirqZG/09b9d97dbe5f7e80923d24f7221e35e2/RR_Candles_Default.jpg?w=856&q=80&fm=webp"></a>
-        </div>
-        <div>
-            <a href=""><img
-                    src="https://images.ctfassets.net/5de70he6op10/3oRTtb3vjFg1CHCmoeYvpM/520d65791a6b2b9686794ee6fe89df12/RR_Sleepwear.jpg?w=856&q=80&fm=webp"></a>
-        </div>
-    </div>
-    <h1 style="font-family:Poppins;">You May Also Like</h1>
-    <div id="youLike">
-        <div>
-            <img src="https://images.urbndata.com/is/image/Anthropologie/81176935_070_b2?$an-category$&qlt=80&fit=constrain"
-                width="222px">
-            <h2>VOLO Hair Hero Quick-Dry Towel</h2>
-        </div>
-        <div>
-            <img src="https://images.urbndata.com/is/image/Anthropologie/40334666_016_b2?$an-category$&qlt=80&fit=constrain"
-                width="222px">
-            <h2>Arctic Monogram Ornament</h2>
-        </div>
-        <div>
-            <img src="https://images.urbndata.com/is/image/Anthropologie/53724381_004_b?$an-category$&qlt=80&fit=constrain"
-                width="222px">
-            <h2>Jao Brand Goe Oil</h2>
-        </div>
-        <div>
-            <img src="https://images.urbndata.com/is/image/Anthropologie/79154092_000_b2?$an-category$&qlt=80&fit=constrain"
-                width="222px">
-            <h2>Ca[ri Blue Volcano Bar Soap</h2>
-        </div>
-        <div>
-            <img src="https://images.urbndata.com/is/image/Anthropologie/79612552_070_b?$an-category$&qlt=80&fit=constrain"
-                width="222px">
-            <h2>Smith's Rosebud Salve Tube</h2>
-        </div>
-    </div>
-    <h1 style="font-family:Poppins;">Trending Now</h1>
-    <div id="trending">
-        <div>
-            <img src="https://images.urbndata.com/is/image/Anthropologie/69402139_030_b11?$an-category$&qlt=80&fit=constrain"
-                width="222px">
-            <h2>rag & bone Mandee Cashmere Polo Sweater</h2>
-        </div>
-        <div>
-            <img src="https://images.urbndata.com/is/image/Anthropologie/45362452AY_081_b2?$an-category$&qlt=80&fit=constrain"
-                width="222px">
-            <h2>Rino & Pelle Teddy Coat</h2>
-        </div>
-        <div>
-            <img src="https://images.urbndata.com/is/image/Anthropologie/4545Z181AA_038_b?$an-category$&qlt=80&fit=constrain"
-                width="222px">
-            <h2>By Fashionista Eyelet Lace Sweater</h2>
-        </div>
-        <div>
-            <img src="https://images.urbndata.com/is/image/Anthropologie/68928233_027_b3?$an-category$&qlt=80&fit=constrain"
-                width="222px">
-            <h2>Lucia Bath Mat</h2>
-        </div>
-        <div>
-            <img src="https://images.urbndata.com/is/image/Anthropologie/68230630_099_b?$an-category$&qlt=80&fit=constrain"
-                width="222px">
-            <h2>Vitruvi White Stone Essential Oil Diffuser</h2>
-        </div>
-    </div>
-    <div>
-        <div>
-            <h1 style="text-align: center;font-weight:lighter">
-                More to Explore
-            </h1>
-        </div>
-        <div id="explore">
-            <div>
-                <img src="https://images.ctfassets.net/5de70he6op10/61SwHEwIBXGqyievjZO7vG/4399fed484247331197d235ddd824007/MTE_1_Giftcards.jpg?w=856&q=80&fm=webp"
-                    width="380px">
-                <h2>The Sure-to-Please Shop</h2>
-                <p>The best present? The only they pick themselves!<br><a href="">send a gift card or e-gift card</a>
-                </p>
+        <div id="data">
+            <div id="basket">
+                <div id="headBasket">
+                    <h1 style="font-weight: lighter;font-size:24px">Basket</h1>
+                    <p>Delivery Options</p>
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Picture</th>
+                            <th>Item</th>
+                            <th>Item Price</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody id="items">
+                        <!-- Append data from js -->
+                    </tbody>
+                </table>
             </div>
-            <div>
-                <img src="https://images.ctfassets.net/5de70he6op10/5rXqHDYoqXytAscv6my5TW/26470fa9cfec82723705866d62c341bb/MTE_3.jpg?w=856&q=80&fm=webp"
-                    width="380px">
-                <h2>The Art of the Dress</h2>
-                <p>Introducing a lovingly curated collection of sculptural silhouettes, enlightened details, and
-                    everlasting impressions.<br><a href="">shop BHLDN weddings</a></p>
-            </div>
-            <div>
-                <img src="https://images.ctfassets.net/5de70he6op10/4lWXFXOjiia6HPkbeCNQGK/47e13656ccbcb123efc765f17b3d903d/MTE_3_Resortwear.jpg?w=856&q=80&fm=webp"
-                    width="380px">
-                <h2>Destination: Vacation</h2>
-                <p>If sunshine is a state of mind, consider these looks your virtual boarding pass.<br><a href="">shop
-                        gateway & resortwear </a></p>
+            <div id="orderSummary">
+                <h1 style="font-weight: lighter;font-size:22px">Order Summary</h1>
+                <div id="box">
+                    <div class="bill">
+                        <p>Subtotal</p>
+                        <p>$<span id="totalAmount">00</span></p>
+                    </div>
+                    <div class="bill">
+                        <p>Shipping</p>
+                        <p>TBD</p>
+                    </div>
+                    <div class="bill">
+                        <p>Estimated Tax</p>
+                        <p>$0.00</p>
+                    </div>
+                    <div class="bill">
+                        <p>Total</p>
+                        <p>$<span id="total">00</span></p>
+                    </div>
+                    <p>Or 4 interest-free installments of $<span id="installment">00.00</span> with <b>Klarna</b> or
+                        <b>afterpay</b></p>
+                    <a href="../Day-03/checkoutPage.html"><button id="checkOut">PROCEED TO CHECKOUT</button></a>
+                    <hr>
+                    <div style="display: flex;justify-content:space-between">
+                        <h2>PROMO CODE</h2>
+                        <h2>+</h2>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-    <div id="abtUs">
-        <h2>About Us</h2>
-        <p>Our mission at Fashionista has always been to surprise and delight you with unexpected, distinctive findss of
-            your closet and home. We source and craft all our products with care, ensuring that any treasure you find
-            ar Fashionista is unique, just like you. Explore our <a href="">dresses</a> shop to find styles and fit
-            perfect for any occasion, from <a href="">cocktail party dresses</a> to <a href="">wedding guest dresses</a>
-            to <a href="">casual daytime</a>
-            shilhouettes. Shop BHLDN and tak... <br> <a href="">Read More</a>
-        </p>
     </div>
     <div id="signup">
         <div>
@@ -585,9 +332,7 @@
             <li>
                 <h2>About Us</h2>
             </li>
-            <a href="../Day-04/ourStory.html">
-                <li>Our Story</li>
-            </a>
+            <li><a href="../Day-04/ourStory.html">Our Story</a></li>
             <li>Events</li>
             <li>A Greater Good</li>
             <li>Diversity & Inclusion</li>
@@ -635,13 +380,48 @@
         width="1200px">
 </body>
 <script>
-    let signIn = document.getElementById('signIn');
+    let container = document.getElementById("container");
+    let basket = document.getElementById("basket");
+    let cartItems = JSON.parse(localStorage.getItem("cart-list")) || [];
+    let totalAmount = document.getElementById("totalAmount")
+    let total = document.getElementById("total")
+    let tbody = document.getElementById("items");
+    let sum = 0;
+    let sum1 = 0;
 
-    window.onclick = (event) => {
-        if (event.target == signIn) {
-            signIn.style.display = "none";
-        }
+    function basketList(data) {
+        tbody.innerHTML = null;
+        data.forEach((element, index) => {
+            let tr = document.createElement("tr");
+            tr.setAttribute("class", "rows")
+            let image = document.createElement("img");
+            image.setAttribute("src", element.avatar);
+            image.style.width = "100px"
+            let title = document.createElement("td");
+            title.innerText = element.title;
+            title.setAttribute("class", "tData");
+            let price = document.createElement("td");
+            price.innerText = "$ " + element.price;
+            price.style.width = "100px"
+            price.style.textAlign = "center"
+            totalAmount.innerText = sum += element.price
+            total.innerText = sum1 += element.price
+            price.setAttribute("class", "tData");
+            let deleteBtn = document.createElement("button");
+            deleteBtn.innerText = "REMOVE"
+            deleteBtn.setAttribute("id", "tDelete");
+
+            deleteBtn.addEventListener("click",()=>{
+                cartItems.splice(index,1);
+                localStorage.setItem("cart-list",JSON.stringify(cartItems));
+                basketList(cartItems)
+            })
+            tr.append(image, title, price, deleteBtn);
+            tbody.append(tr);
+
+        })
     }
+    basketList(cartItems);
 </script>
 
 </html>
