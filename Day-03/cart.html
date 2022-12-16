@@ -88,7 +88,7 @@
             font-family: Poppins;
         }
 
-        #nav>ul>li:hover {
+        .navigation:hover {
             cursor: pointer;
             color: rgb(1, 81, 1);
             border-bottom: 1px solid rgb(1, 81, 1);
@@ -210,6 +210,22 @@
             border: 1px solid black;
             cursor: pointer;
         }
+        .navBarPro {
+            position: absolute;
+            background-color: white;
+            display: none;
+            right: 0px;
+            z-index: 1;
+            margin: 12px;
+            width: 600px;
+            font-size: 14px;
+            line-height: 30px;
+            border: 1px solid rgb(204, 203, 203);
+        }
+        .navSale:hover .navBarPro {
+            display: block;
+            color: black;
+        }
     </style>
 </head>
 
@@ -220,24 +236,514 @@
                 <h2>.FASHIONISTA.</h2>
             </div>
             <div id="search">
-                <input type="text" id="searchBar" placeholder="Search Anthroplogie">
+                <input type="text" id="searchBar" placeholder="Search Fashionista">
                 <i class="material-icons"><a href="../Day-03/cart.html">shopping_bag</a></i>
             </div>
         </div>
         <div id="nav">
-            <ul type="none" id="navBar">
-                <li class="navigation" style="color:rgb(223, 52, 52)">Gifts</li>
-                <li class="navigation">New!</li>
-                <li class="navigation">Dresses</li>
-                <li class="navigation">Clothing</li>
-                <li class="navigation">Shoes</li>
-                <li class="navigation">Accessories</li>
-                <li class="navigation">BHLDN Weddings</li>
-                <li class="navigation">Home & Furniture</li>
-                <li class="navigation">Beauty & Wellness</li>
-                <li class="navigation">Garden & Outdoor</li>
-                <li class="navigation">Sale</li>
-            </ul>
+            <div id="navBar">
+                <div class="navigation navSale" style="color:rgb(223, 52, 52)">Gifts
+                    <div class="navBarPro" style="width:1180px">
+                        <div style="display: flex;">
+                            <div style="border-right: 1px solid rgb(204, 203, 203);padding-right:40px">
+                                <h4 style="margin-left: 40px;margin-right: 40px;border-bottom: 1px solid rgb(204,203,203);">Shop by Category</h4>
+                                <div style="display: flex;">
+                                    <ul type="none">
+                                        <li>Explore All Gifts</li>
+                                        <li>Shop All Gifts</li>
+                                        <li>Upto 50% Off Cozy Styles, Candles, Beauty, Jewelry & More </li>
+                                        <li>Gifts for Her</li>
+                                        <li>Candle Gifts & Sets</li>
+                                        <li>Holiday Decor, Ornaments. Gift Wrap & More</li>
+                                        <li>Stocking Stuffers</li>
+                                        <li>Giftable Sweaters</li>
+                                        <li>Giftable Accessories: Jewelry, Bags, Scarves & More</li>
+                                    </ul>
+                                    <ul type="none">
+                                        <li>Gifts for the Home</li>
+                                        <li>Cozy Gifts: PJs, Slippers, Throws, Mugs & More</li>
+                                        <li>Personalized & Monogram Gifts</li>
+                                        <li>Beauty Gifts & Sets</li>
+                                        <li>Gifts by Recipient</li>
+                                        <li>Bestselling Gifts</li>
+                                        <li>Gift Cards</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div style="border-right: 1px solid rgb(204, 203, 203);padding-right:40px">
+                                <h4 style="margin-left: 40px;margin-right: 40px;border-bottom: 1px solid rgb(204,203,203);">Gifts by Price</h4>
+                                <ul type="none">
+                                    <li>Gifts Under $75</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 style="margin-left: 40px;margin-right: 40px;border-bottom: 1px solid rgb(204,203,203);">Featured</h4>
+                                <ul type="none">
+                                    <li>The Pet Shop</li>
+                                    <li>The Games Shop</li>
+                                    <li>The George & Viv Holiday Shop</li>
+                                    <li>The One-Size Gift Shop</li>
+                                    <li>Terrain Holiday Gift Shop</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="navigation navSale">New!
+                    <div class="navBarPro" style="width:700px;right:450px">
+                        <div style="display: flex;">
+                            <div style="border-right: 1px solid rgb(204, 203, 203);padding-right:40px">
+                                <h4 style="margin-left: 40px;margin-right: 40px;border-bottom: 1px solid rgb(204,203,203);">Shop by Category</h4>
+                                <div>
+                                    <ul type="none">
+                                        <li>Accessories</li>
+                                        <li>Beauty & Wellness</li>
+                                        <li>Clothing</li>
+                                        <li>Dresses</li>
+                                        <li>Home & Furniture</li>
+                                        <li>Jewelry</li>
+                                        <li>Petites</li>
+                                        <li>Plus</li>
+                                        <li>Shoes</li>
+                                        <li>BHLDN Weddings</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div style="padding-right:40px">
+                                <h4 style="margin-left: 40px;margin-right: 40px;border-bottom: 1px solid rgb(204,203,203);">Featured</h4>
+                                <ul type="none">
+                                    <li>New Today: Clothing & Accessories</li>
+                                    <li>Trending: Metallic & Shine</li>
+                                    <li>The Velvet Shop</li>
+                                    <li>House of Hackney</li>
+                                    <li>Hanukkah Decor & Entertainment</li>
+                                    <li>The Cozy Adventure Shop</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="navigation navSale">Dresses
+                    <div class="navBarPro" style="width:700px;right:400px">
+                        <div style="display: flex;">
+                            <div style="border-right: 1px solid rgb(204, 203, 203);padding-right:40px">
+                                <h4 style="margin-left: 40px;margin-right: 40px;border-bottom: 1px solid rgb(204,203,203);">Shop by Category</h4>
+                                <div style="display: flex;">
+                                    <ul type="none">
+                                        <li>Shop All Dresses</li>
+                                        <li>New!</li>
+                                        <li>Top-Rated Dresses</li>
+                                        <li>Occasion & Party Dresses</li>
+                                        <li>Lounge & Casual Dresses</li>
+                                        <li>Formal Dresses</li>
+                                        <li>Maxi Dresses</li>
+                                    </ul>
+                                    <ul type="none">
+                                        <li>Mini & Tunic Dresses</li>
+                                        <li>Midi Dresses</li>
+                                        <li>Petite Dresses</li>
+                                        <li>Plus Dresses</li>
+                                        <li>Wedding Guest Dresses</li>
+                                        <li>BHLDN Weddings</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div style="padding-right:40px">
+                                <h4 style="margin-left: 40px;margin-right: 40px;border-bottom: 1px solid rgb(204,203,203);">Featured Shops</h4>
+                                <ul type="none">
+                                    <li>Velvet Dresses</li>
+                                    <li>Trending: Tulle</li>
+                                    <li>Little Black Dresses</li>
+                                    <li>Little White Dresses</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="navigation navSale">Clothing
+                    <div class="navBarPro" style="width:1000px;right:100px">
+                        <div style="display: flex;">
+                            <div style="border-right: 1px solid rgb(204, 203, 203);padding-right:40px">
+                                <h4 style="margin-left: 40px;margin-right: 40px;border-bottom: 1px solid rgb(204,203,203);">Shop by Category</h4>
+                                <div style="display: flex;">
+                                    <ul type="none">
+                                        <li>Shop All Clothing</li>
+                                        <li>New!</li>
+                                        <li>Top-Rated</li>
+                                        <li>Activewear</li>
+                                        <li>Blazers</li>
+                                        <li>Dresses</li>
+                                        <li>Getaway & Resort Wear</li>
+                                        <li>Intimates & Lingerie</li>
+                                        <li>Jackets & Coats</li>
+                                        <li>Jeans</li>
+                                        <li>Jumpsuits</li>
+                                    </ul>
+                                    <ul type="none">
+                                        <li>Kimonos & Kaftans</li>
+                                        <li>Loungewear</li>
+                                        <li>Pajamas & Robes</li>
+                                        <li>Pants</li>
+                                        <li>Petites</li>
+                                        <li>Plus</li>
+                                        <li>Shorts</li>
+                                        <li>Skirts</li>
+                                        <li>Sweaters</li>
+                                        <li>Swimwear</li>
+                                        <li>Tops & Tees</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div style="border-right: 1px solid rgb(204, 203, 203);padding-right:40px">
+                                <h4 style="margin-left: 40px;margin-right: 40px;border-bottom: 1px solid rgb(204,203,203);">Featured</h4>
+                                <ul type="none">
+                                    <li>The Holiday Party Shop</li>
+                                    <li>Trending: Metallic & Shine</li>
+                                    <li>The Velvet Shop</li>
+                                    <li>Tending: Faux Leather</li>
+                                    <li>Trending: Corduroy</li>
+                                    <li>The Cozy Adventure Shop</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 style="margin-left: 40px;margin-right: 40px;border-bottom: 1px solid rgb(204,203,203);">Explore Sweaters</h4>
+                                <ul type="none">
+                                    <li>Pullover Sweaters</li>
+                                    <li>Cardigans</li>
+                                    <li>Statement Sweaters</li>
+                                    <li>Cashmere Sweaters</li>
+                                    <li>Turtleneck Sweaters</li>
+                                    <li>Sweaters Under $100</li>
+                                    <li>Petite Sweaters</li>
+                                    <li>Plus Sweaters</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="navigation navSale">Shoes
+                    <div class="navBarPro" style="width:1100px">
+                        <div style="display: flex;">
+                            <div style="border-right: 1px solid rgb(204, 203, 203);padding-right:40px">
+                                <h4 style="margin-left: 40px;margin-right: 40px;border-bottom: 1px solid rgb(204,203,203);">Shop by Category</h4>
+                                <div style="display: flex;">
+                                    <ul type="none">
+                                        <li>Shop All Shoe</li>
+                                        <li>New!</li>
+                                        <li>Top-Rated</li>
+                                        <li>Boots & Booties</li>
+                                        <li>Cold Weather Boots</li>
+                                        <li>Flats</li>
+                                    </ul>
+                                    <ul type="none">
+                                        <li>Heels & Wedges</li>
+                                        <li>Mules & Clogs</li>
+                                        <li>Sandals</li>
+                                        <li>Slippers</li>
+                                        <li>Sneakers</li>
+                                        <li>Socks & Tights</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div style="border-right: 1px solid rgb(204, 203, 203);padding-right:40px">
+                                <h4 style="margin-left: 40px;margin-right: 40px;border-bottom: 1px solid rgb(204,203,203);">Featured</h4>
+                                <ul type="none">
+                                    <li>Embellished Shoes</li>
+                                    <li>Legwear & Shoe Paintings</li>
+                                    <li>Party Shoes</li>
+                                    <li>Platform Shoes</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 style="margin-left: 40px;margin-right: 40px;border-bottom: 1px solid rgb(204,203,203);">Brands We Love</h4>
+                                <ul type="none">
+                                    <li>ON</li>
+                                    <li>Bibi Lou</li>
+                                    <li>Birkenstock</li>
+                                    <li>Silent D</li>
+                                    <li>Sorel</li>
+                                    <li>UGG</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="navigation navSale">Accessories
+                    <div class="navBarPro" style="width:1100px">
+                        <div style="display: flex;">
+                            <div style="border-right: 1px solid rgb(204, 203, 203);padding-right:40px">
+                                <h4 style="margin-left: 40px;margin-right: 40px;border-bottom: 1px solid rgb(204,203,203);">Shop by Category</h4>
+                                <div style="display: flex;">
+                                    <ul type="none">
+                                        <li>Shop All Accessories</li>
+                                        <li>New!</li>
+                                        <li>Top-Rated</li>
+                                        <li>Bags & Small Accessories</li>
+                                        <li>Belts</li>
+                                        <li>Gloves</li>
+                                        <li>Hair Accessories</li>
+                                    </ul>
+                                    <ul type="none">
+                                        <li>Hats</li>
+                                        <li>Jewelry</li>
+                                        <li>Scarves</li>
+                                        <li>Socks & Tights</li>
+                                        <li>Sunglasses & Reading Glasses</li>
+                                        <li>Travel & Tech</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div style="border-right: 1px solid rgb(204, 203, 203);padding-right:40px">
+                                <h4 style="margin-left: 40px;margin-right: 40px;border-bottom: 1px solid rgb(204,203,203);">Explore Jewelry</h4>
+                                <ul type="none">
+                                    <li>Necklaces</li>
+                                    <li>Earrings</li>
+                                    <li>Bracelets</li>
+                                    <li>Rings</li>
+                                    <li>Hoop Shop</li>
+                                    <li>Monogram & Personalized Jewelry</li>
+                                    <li>Shop All Jewelry</li>
+                                </ul>
+                            </div>
+                            <div style="border-right: 1px solid rgb(204, 203, 203);padding-right:40px">
+                                <h4 style="margin-left: 40px;margin-right: 40px;border-bottom: 1px solid rgb(204,203,203);">Featured</h4>
+                                <ul type="none">
+                                    <li>Top 25 Must-Have Jewelry Gifts</li>
+                                    <li>The One- Size Gift Shop</li>
+                                    <li>Bedecked in beads: Capes,Collars, Jewelry & More</li>
+                                    <li>Cold Weather Accessories & Boots</li>
+                                    <li>Legwear & Shoe Painings</li>
+                                    <li>The Holiday Party Shop</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="navigation navSale">BHLDN Weddings
+                    <div class="navBarPro" style="width:1100px">
+                        <div style="display: flex;">
+                            <div style="border-right: 1px solid rgb(204, 203, 203);padding-right:40px">
+                                <h4 style="margin-left: 40px;margin-right: 40px;border-bottom: 1px solid rgb(204,203,203);">Shop by Category</h4>
+                                <div style="display: flex;">
+                                    <ul type="none">
+                                        <li>Explore All BHLDN Weddings</li>
+                                        <li>Book An Appointment</li>
+                                        <li>Shop All Weddings</li>
+                                        <li>New!</li>
+                                        <li>Top Rated Styles</li>
+                                        <li>Bride</li>
+                                        <li>Wedding Dresses</li>
+                                        <li>Bridesmaid Dresses</li>
+                                    </ul>
+                                    <ul type="none">
+                                        <li>Mother of the Bride</li>
+                                        <li>Flower Girl Dresses</li>
+                                        <li>Wedding Guest Dresses</li>
+                                        <li>Robes & Lingerie</li>
+                                        <li>Plus</li>
+                                        <li>Accessories</li>
+                                        <li>Shoes</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div style="border-right: 1px solid rgb(204, 203, 203);padding-right:40px">
+                                <h4 style="margin-left: 40px;margin-right: 40px;border-bottom: 1px solid rgb(204,203,203);">Featured</h4>
+                                <ul type="none">
+                                    <li>Exclusive: BHLDN by Carly Cushine</li>
+                                    <li>New Spring Gowns</li>
+                                    <li>Printed Bridesmaid Dresses</li>
+                                    <li>The Pearl Edit</li>
+                                    <li>BHLDN Wedding & Ocassion Stories</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 style="margin-left: 40px;margin-right: 40px;border-bottom: 1px solid rgb(204,203,203);">Bridal by Style</h4>
+                                <ul type="none">
+                                    <li>Modern Bride</li>
+                                    <li>Bohemian Bride</li>
+                                    <li>Beach & Destination Bride</li>
+                                    <li>City Hall Bride</li>
+                                    <li>Romantic Bride</li>
+                                    <li>Classic Bride</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="navigation navSale">Home & Furniture
+                    <div class="navBarPro" style="width:1100px;">
+                        <div style="display: flex">
+                            <div style="border-right: 1px solid rgb(204, 203, 203);padding-right:40px">
+                                <h4  style="margin-left: 40px;margin-right: 40px;border-bottom: 1px solid rgb(204,203,203);">Shop by Category</h4>
+                                <div style="display: flex;">
+                                    <ul type="none">
+                                        <li>Explore All Home & Furniture New!</li>
+                                        <li>Up to 50% Off Cozy Styles, Candles, Beauty, Jewelry & More</li>
+                                        <li>Bath</li>
+                                        <li>Bedding</li>
+                                        <li>Candles & Home Fragrance</li>
+                                        <li>Decor</li>
+                                        <li>Furniture</li>
+                                    </ul>
+                                    <ul type="none">
+                                        <li>Holiday Decor, Ornaments, Gift Wrap & More</li>
+                                        <li>Kids</li>
+                                        <li>Kitchen & Dining</li>
+                                        <li>Outdoor</li>
+                                        <li>Stationery</li>
+                                        <li>Stale Home & Furniture</li>
+                                        <li>Explore Terrain</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div style="border-right: 1px solid rgb(204, 203, 203);">
+                                <h4  style="margin-left: 40px;margin-right: 40px;border-bottom: 1px solid rgb(204,203,203);">Exclusively For Anthro: Arist Collaborations</h4>
+                                <ul type="none">
+                                    <li>The George & Viv Holiday Shop</li>
+                                    <li>Matilda Goad & Co.</li>
+                                    <li>Amber Lewis</li>
+                                    <li>Nathalie Lete</li>
+                                    <li>Mark D. Sikes</li>
+                                    <li>Lemieux et Cie</li>
+                                    <li>Explore Artist Collaborations</li>
+                                </ul>
+                            </div>
+                            <div style="padding-right:40px">
+                                <h4 style="margin-left: 40px;margin-right: 40px;border-bottom: 1px solid rgb(204,203,203);">AnthroLiving House Tours</h4>
+                                <ul type="none">
+                                    <li>Less is More</li>
+                                    <li>House of Hackney</li>
+                                    <li>A Sense of Place</li>
+                                    <li>Soulful Spaces</li>
+                                    <li>Refreshed Perspectives</li>
+                                    <li>The Story of Home</li>
+                                    <li>Be Our Guest</li>
+                                    <li>True Nature</li>
+                                    <li>Lit From Within</li>
+                                    <li>Explore AnthroLiving House Tours</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="navigation navSale">Beauty & Wellness
+                    <div class="navBarPro" style="width:1000px">
+                        <div style="display: flex;">
+                            <div style="border-right: 1px solid rgb(204, 203, 203);">
+                                <h4 style="margin-left: 40px;margin-right: 40px;border-bottom: 1px solid rgb(204,203,203);">Shop by Category</h4>
+                                <div style="display: flex;">
+                                    <ul type="none">
+                                        <li>Shop All Beauty & Wellness</li>
+                                        <li>New!</li>
+                                        <li>Top-Rated</li>
+                                        <li>Beauty Gifts & Sets</li>
+                                        <li>Bath & Body</li>
+                                        <li>Candles & Home Fragrance</li>
+                                        <li>Fragrance</li>
+                                        <li>Hair care</li>
+                                    </ul>
+                                    <ul type="none">
+                                        <li>Makeup</li>
+                                        <li>Nails</li>
+                                        <li>SkinCare</li>
+                                        <li>Suncare</li>
+                                        <li>Tools & Brushes</li>
+                                        <li>Wellness</li>
+                                        <li>Workout Gear</li>
+                                        <li>Sale Beauty & Wellness</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div style="border-right: 1px solid rgb(204, 203, 203);">
+                                <h4 style="margin-right: 40px;margin-left: 40px;border-bottom: 1px solid rgb(204,203,203);">Featured</h4>
+                                <div>
+                                    <ul type="none">
+                                        <li>The George & Viv Holiday Shop</li>
+                                        <li>Fashionista Exclusives</li>
+                                        <li>The Holiday 2022 Edit : Beauty & Self Care</li>
+                                        <li>Beauty Gifts Under $25</li>
+                                        <li>Travel Size</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div style="border-right: 1px solid rgb(204,203,203);padding-right:100px;">
+                                <h4 style="margin-left: 40px;border-bottom: 1px solid rgb(204,203,203);">Brand We Love</h4>
+                                <div>
+                                    <ul type="none">
+                                        <li>Anastasia Beverly Hills</li>
+                                        <li>Capri Blue</li>
+                                        <li>Caudalie</li>
+                                        <li>ELEMIS</li>
+                                        <li>Floral Street</li>
+                                        <li>Nest Fragrances</li>
+                                        <li>NuFACE</li>
+                                        <li>Slip</li>
+                                        <li>Sunday Riley</li>
+                                        <li>Tocca</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="navigation navSale">Garden & Outdoor
+                    <div class="navBarPro">
+                        <h4 style="margin-left: 40px;border-bottom:1px solid rgb(204, 203, 203);padding-bottom:10px">
+                            Shop by Category</h4>
+                        <div style="display: flex;margin-top:-20px">
+                            <ul type="none" style="padding-right: 100px;">
+                                <li>Shop All Garden & Outdoor</li>
+                                <li>Painters</li>
+                                <li>Garden & Utility</li>
+                            </ul>
+                            <ul type="none" style="padding-right: 100px;">
+                                <li>Outdoor Living</li>
+                                <li>Furniture</li>
+                                <li>Plants & Flowers</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="navigation navSale">Sale
+                    <div class="navBarPro">
+                        <div style="display: flex;">
+                            <div id="saleLeft">
+                                <div id="big">
+                                    <ul type="none">
+                                        <li><b>Shop by Category</b></li>
+                                        <hr>
+                                        <li>Shop All Sale</li>
+                                        <li>Freshly Cut</li>
+                                        <li>Accessories</li>
+                                        <li>Beauty & Wellness</li>
+                                        <li>Clothing</li>
+                                        <li>Home & Furniture</li>
+                                    </ul>
+                                </div>
+                                <div id="small">
+                                    <ul type="none">
+                                        <li>Jewelry</li>
+                                        <li>Petites</li>
+                                        <li>Plus</li>
+                                        <li>Shoes</li>
+                                        <li>BHLDN Weddings</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div id="saleRight">
+                                <ul type="none">
+                                    <li><b>Shop by Price</b></li>
+                                    <hr>
+                                    <li>Under $25</li>
+                                    <li>Under $50</li>
+                                    <li>Under $75</li>
+                                    <li>Under $100</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <div id="container">
