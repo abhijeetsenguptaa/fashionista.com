@@ -224,7 +224,7 @@
                 <h2>.FASHIONISTA.</h2>
             </div>
             <div id="search">
-                <input type="text" id="searchBar" placeholder="Search Fashionista">
+                <input type="text" id="searchBar" placeholder="Search Fashionista" oninput="search()">
                 <i class="material-icons"><a href="../Day-03/cart.html">shopping_bag</a></i>
             </div>
         </div>
@@ -871,7 +871,7 @@
             console.log(error);
         })
 
-        function searchItem(){
+        function search(){
             let searchBar = document.getElementById("searchBar").value;
             let searchData = myNeededData.filter((elem)=>{
                 return elem.title.toLowerCase().includes(searchBar.toLowerCase());
